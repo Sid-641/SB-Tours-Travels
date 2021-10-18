@@ -1,0 +1,262 @@
+#logo {
+	height: 55px;
+	width:  75px;
+	margin: -15px -15px;
+}
+
+body {
+	font: 400 15px/1.8 Lato, sans-serif;
+	color: black;
+}
+
+h3,h4 {
+	margin: 5px 0 15px 0;
+	letter-spacing: 2.5px;
+	font-size: 20px;
+	color: burlywood;
+	text-shadow: whitesmoke;
+}
+
+.container {
+	padding: 80px 120px;
+}
+
+.carousel-inner img {
+	width: 70%;
+	margin: auto;
+	box-shadow: black;
+	border-radius: 15px 50px 30px;
+}
+
+.carousel-caption h3 {
+    color: burlywood !important;
+  }
+
+@media (max-width: 600px) {
+	.carousel-caption {
+		display: none;
+	}
+}
+
+.navbar {
+    font-family: Helvetica, sans-serif;
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 15px !important;
+    letter-spacing: 2px;
+    opacity: 0.7;
+  }
+
+.navbar li a, .navbar .navbar-brand { 
+    color: #d5d5d5 !important;
+}
+
+.navbar-nav li a:hover {
+    color: #000 !important;
+}
+
+.navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+.dropdown-toggle {
+    color: #fff;
+    background-color: #555 !important;
+}
+
+.dropdown-menu li a {
+    color: #000 !important;
+}
+
+.dropdown-menu li a:hover {
+    background-color: red !important;
+} 
+
+footer {
+	background-color: #2d2d30;
+	color: #fff;
+	padding: 32px;
+}
+
+footer a:hover {
+	color: steelblue;
+	text-decoration: none;
+}
+
+#about {
+	background: rgb(34,193,195);
+	background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+	font-family: Verdana, serif;
+	font-size: 18px;
+	border-radius: 15px 50px 30px;
+}
+
+#about h2 {
+	font-family: Georgia, serif;
+	font-size: 46px;
+	color: #fd5c63;
+	letter-spacing: 2px;
+}
+
+.thumbnail {
+	width: 90%;
+	margin: auto;
+}
+
+.did_you_know {
+	color: black !important;
+	margin: auto;
+
+}
+
+.did_you_know h2 {
+	color: #ff6600;
+}
+
+* { box-sizing: border-box; }
+
+/*.container {
+  background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/concrete-texture.png");
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+*/
+.rating {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: row-reverse;
+  height: 150px;
+  position: relative;
+}
+
+.rating-0 {
+  filter: grayscale(100%);
+}
+
+.rating > input {
+  display: none;
+}
+
+.rating > label {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  margin-top: auto;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23e3e3e3' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 76%;
+  transition: .3s;
+}
+
+.rating > input:checked ~ label,
+.rating > input:checked ~ label ~ label {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23fcd93a' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+}
+
+
+.rating > input:not(:checked) ~ label:hover,
+.rating > input:not(:checked) ~ label:hover ~ label {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23d8b11e' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+}
+
+.emoji-wrapper {
+  width: 100%;
+  text-align: center;
+  height: 100px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.emoji-wrapper:before,
+.emoji-wrapper:after{
+  content: "";
+  height: 15px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+
+.emoji-wrapper:before {
+  top: 0;
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 35%,rgba(255,255,255,0) 100%);
+}
+
+.emoji-wrapper:after{
+  bottom: 0;
+  background: linear-gradient(to top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 35%,rgba(255,255,255,0) 100%);
+}
+
+.emoji {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: .3s;
+}
+
+.emoji > svg {
+  margin: 15px 0; 
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+}
+
+#rating-1:checked ~ .emoji-wrapper > .emoji { transform: translateY(-100px); }
+#rating-2:checked ~ .emoji-wrapper > .emoji { transform: translateY(-200px); }
+#rating-3:checked ~ .emoji-wrapper > .emoji { transform: translateY(-300px); }
+#rating-4:checked ~ .emoji-wrapper > .emoji { transform: translateY(-400px); }
+#rating-5:checked ~ .emoji-wrapper > .emoji { transform: translateY(-500px); }
+
+.feedback {
+  max-width: 360px;
+  background-color: #fff;
+  width: 100%;
+  padding: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  box-shadow: 0 4px 30px rgba(0,0,0,.05);
+}
+
+#feedback h2 {
+	font-family: Consolas, Monaco, monospace ;
+}
+
+.form-control {
+	border-radius: 0;
+}
+
+textarea {
+	resize: none;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #f1f1f1;
+    border-radius: 0;
+    transition: .2s;
+  }
+  
+  .btn:hover, .btn:focus {
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #000;
+  }
